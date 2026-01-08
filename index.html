@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM | SAWON.AWAKEN</title>
+    <meta name="description" content="Shadow System Interface - Sawon Digital Awakening">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- System Scan Overlay -->
+    <div class="scan-overlay"></div>
+    <div class="grid-overlay"></div>
+    <div class="flicker-overlay"></div>
+    
+    <!-- Main System Container -->
+    <div class="system-container">
+        <!-- Landing Sequence -->
+        <div class="system-terminal" id="terminal">
+            <div class="terminal-line" data-delay="500">> SYSTEM BOOT SEQUENCE INITIATED</div>
+            <div class="terminal-line" data-delay="1500">> SCANNING FOR USER PRESENCE...</div>
+            <div class="terminal-line" data-delay="2500">> USER DETECTED</div>
+            <div class="terminal-line glitch-text" data-delay="3500" data-text="SAWON">> IDENTIFICATION: <span class="ident-text">[CLASSIFIED]</span></div>
+            <div class="terminal-line" data-delay="4500">> ACCESS GRANTED: LEVEL OMEGA</div>
+            <div class="terminal-line" data-delay="5500">> SHADOW SYSTEM ONLINE</div>
+            
+            <div class="awakening-message">
+                <div class="awakening-line" id="awakening-line-1">Hi, I'm Sawon</div>
+                <div class="awakening-line" id="awakening-line-2">Welcome to my new version — 2026</div>
+            </div>
+        </div>
+
+        <!-- Navigation (System Commands) -->
+        <nav class="system-nav">
+            <div class="system-command" data-target="status">STATUS</div>
+            <div class="system-command" data-target="skills">SKILLS</div>
+            <div class="system-command" data-target="preferences">PREFERENCES</div>
+            <div class="system-command" data-target="objective">OBJECTIVE</div>
+            <div class="system-command" data-target="interface">INTERFACE</div>
+        </nav>
+
+        <!-- Status Panel -->
+        <section class="system-panel active" id="status-panel">
+            <div class="panel-header">
+                <div class="panel-title">STATUS PANEL</div>
+                <div class="panel-subtitle">// USER PROFILE ANALYSIS</div>
+            </div>
+            
+            <div class="panel-content">
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon">⚡</div>
+                        <div class="status-label">ROLE</div>
+                        <div class="status-value">SHADOW DEVELOPER</div>
+                        <div class="status-desc">Primary designation confirmed</div>
+                    </div>
+                    
+                    <div class="status-card">
+                        <div class="status-icon">🎯</div>
+                        <div class="status-label">FOCUS</div>
+                        <div class="status-value">WEB & APP SYSTEMS</div>
+                        <div class="status-desc">Full-spectrum development</div>
+                    </div>
+                    
+                    <div class="status-card">
+                        <div class="status-icon">📊</div>
+                        <div class="status-label">SYNC LEVEL</div>
+                        <div class="status-value">
+                            <div class="level-bar">
+                                <div class="level-fill" data-level="87"></div>
+                            </div>
+                            <span class="level-percent">87%</span>
+                        </div>
+                        <div class="status-desc">Optimal synchronization achieved</div>
+                    </div>
+                    
+                    <div class="status-card">
+                        <div class="status-icon">🛡️</div>
+                        <div class="status-label">RANK</div>
+                        <div class="status-value">OMEGA-CLASS</div>
+                        <div class="status-desc">Maximum threat assessment</div>
+                    </div>
+                </div>
+                
+                <div class="system-log">
+                    <div class="log-header">SYSTEM LOG</div>
+                    <div class="log-entry">[2026.01.15 23:47:12] User state: ACTIVE</div>
+                    <div class="log-entry">[2026.01.15 23:47:15] Cognitive patterns: OPTIMAL</div>
+                    <div class="log-entry">[2026.01.15 23:47:18] Shadow integration: COMPLETE</div>
+                    <div class="log-entry">[2026.01.15 23:47:21] System interface: STABLE</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Panel -->
+        <section class="system-panel" id="skills-panel">
+            <div class="panel-header">
+                <div class="panel-title">SKILLS WINDOW</div>
+                <div class="panel-subtitle">// UNLOCKED ABILITIES</div>
+            </div>
+            
+            <div class="panel-content">
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <div class="category-title">CORE SYSTEMS</div>
+                        <div class="skill-grid">
+                            <div class="skill-item" data-skill="web">
+                                <div class="skill-icon">🌐</div>
+                                <div class="skill-name">WEB DEVELOPMENT</div>
+                                <div class="skill-mastery">
+                                    <div class="mastery-bar">
+                                        <div class="mastery-fill" data-mastery="94"></div>
+                                    </div>
+                                    <span class="mastery-value">94%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item" data-skill="app">
+                                <div class="skill-icon">📱</div>
+                                <div class="skill-name">APP DEVELOPMENT</div>
+                                <div class="skill-mastery">
+                                    <div class="mastery-bar">
+                                        <div class="mastery-fill" data-mastery="88"></div>
+                                    </div>
+                                    <span class="mastery-value">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-title">PROGRAMMING LANGUAGES</div>
+                        <div class="skill-list">
+                            <div class="language-item">
+                                <div class="language-name">PYTHON</div>
+                                <div class="language-level">
+                                    <div class="level-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <span class="level-text">EXPERT</span>
+                                </div>
+                            </div>
+                            
+                            <div class="language-item">
+                                <div class="language-name">JAVA</div>
+                                <div class="language-level">
+                                    <div class="level-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <span class="level-text">EXPERT</span>
+                                </div>
+                            </div>
+                            
+                            <div class="language-item">
+                                <div class="language-name">HTML</div>
+                                <div class="language-level">
+                                    <div class="level-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                    </div>
+                                    <span class="level-text">MASTER</span>
+                                </div>
+                            </div>
+                            
+                            <div class="language-item">
+                                <div class="language-name">CSS</div>
+                                <div class="language-level">
+                                    <div class="level-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                    </div>
+                                    <span class="level-text">MASTER</span>
+                                </div>
+                            </div>
+                            
+                            <div class="language-item">
+                                <div class="language-name">JAVASCRIPT</div>
+                                <div class="language-level">
+                                    <div class="level-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <span class="level-text">EXPERT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preferences Panel -->
+        <section class="system-panel" id="preferences-panel">
+            <div class="panel-header">
+                <div class="panel-title">PREFERENCES MODULE</div>
+                <div class="panel-subtitle">// USER CONFIGURATION DATA</div>
+            </div>
+            
+            <div class="panel-content">
+                <div class="preferences-container">
+                    <div class="preference-module">
+                        <div class="module-header">
+                            <div class="module-icon">🎵</div>
+                            <div class="module-title">AUDIO PREFERENCES</div>
+                        </div>
+                        <div class="module-content">
+                            <div class="preference-item">
+                                <div class="preference-label">PRIMARY GENRE</div>
+                                <div class="preference-value">SYNTHWAVE / CYBERPUNK</div>
+                            </div>
+                            <div class="preference-item">
+                                <div class="preference-label">SECONDARY GENRE</div>
+                                <div class="preference-value">DARK AMBIENT / LO-FI</div>
+                            </div>
+                            <div class="preference-item">
+                                <div class="preference-label">FREQUENCY ANALYSIS</div>
+                                <div class="preference-value">80-160 BPM OPTIMAL</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="preference-module">
+                        <div class="module-header">
+                            <div class="module-icon">🎨</div>
+                            <div class="module-title">VISUAL PREFERENCES</div>
+                        </div>
+                        <div class="module-content">
+                            <div class="preference-item">
+                                <div class="preference-label">COLOR SCHEME</div>
+                                <div class="preference-value">DARK MODE / NEON ACCENTS</div>
+                            </div>
+                            <div class="preference-item">
+                                <div class="preference-label">PRIMARY COLOR</div>
+                                <div class="color-sample" style="--color-accent: #00f3ff"></div>
+                                <div class="preference-value">CYAN (#00F3FF)</div>
+                            </div>
+                            <div class="preference-item">
+                                <div class="preference-label">SECONDARY COLOR</div>
+                                <div class="color-sample" style="--color-accent: #9d00ff"></div>
+                                <div class="preference-value">PURPLE (#9D00FF)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="preference-module">
+                        <div class="module-header">
+                            <div class="module-icon">⚙️</div>
+                            <div class="module-title">SYSTEM PREFERENCES</div>
+                        </div>
+                        <div class="module-content">
+                            <div class="preference-item">
+                                <div class="preference-label">INTERFACE MODE</div>
+                                <div class="preference-value">MINIMAL / SYSTEM</div>
+                            </div>
+                            <div class="preference-item">
+                                <div class="preference-label">ANIMATION LEVEL</div>
+                                <div class="preference-value">SMOOTH / INTENTIONAL</div>
+                            </div>
+                            <div class="preference-item">
+                                <div class="preference-label">RESPONSE TIME</div>
+                                <div class="preference-value">INSTANT / PRECISE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objective Panel -->
+        <section class="system-panel" id="objective-panel">
+            <div class="panel-header">
+                <div class="panel-title">OBJECTIVE MODULE</div>
+                <div class="panel-subtitle">// PRIMARY MISSION PARAMETERS</div>
+            </div>
+            
+            <div class="panel-content">
+                <div class="objective-container">
+                    <div class="objective-display">
+                        <div class="objective-icon">🎯</div>
+                        <div class="objective-title">MAIN OBJECTIVE</div>
+                        <div class="objective-value">BUILD BILLION-LEVEL IMPACT</div>
+                        <div class="objective-subtitle">THROUGH TECHNOLOGICAL DOMINANCE</div>
+                    </div>
+                    
+                    <div class="mission-log">
+                        <div class="mission-header">MISSION PARAMETERS</div>
+                        <div class="mission-item">
+                            <div class="mission-label">PHASE 01:</div>
+                            <div class="mission-value">MASTER ALL DEVELOPMENT SYSTEMS</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-label">PHASE 02:</div>
+                            <div class="mission-value">BUILD DISRUPTIVE TECH PRODUCTS</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-label">PHASE 03:</div>
+                            <div class="mission-value">ACHIEVE GLOBAL TECHNICAL INFLUENCE</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-label">PHASE OMEGA:</div>
+                            <div class="mission-value">REDEFINE HUMAN-TECH INTERFACE</div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-indicator">
+                        <div class="progress-label">MISSION PROGRESS</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="27"></div>
+                        </div>
+                        <div class="progress-value">27% COMPLETE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interface Panel -->
+        <section class="system-panel" id="interface-panel">
+            <div class="panel-header">
+                <div class="panel-title">INTERFACE CONTROLS</div>
+                <div class="panel-subtitle">// SYSTEM CONFIGURATION</div>
+            </div>
+            
+            <div class="panel-content">
+                <div class="interface-controls">
+                    <div class="control-group">
+                        <div class="control-label">SYSTEM THEME</div>
+                        <div class="control-options">
+                            <div class="control-option active" data-theme="shadow">SHADOW MODE</div>
+                            <div class="control-option" data-theme="neon">NEON MODE</div>
+                            <div class="control-option" data-theme="monochrome">MONOCHROME</div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <div class="control-label">ANIMATION INTENSITY</div>
+                        <div class="control-slider">
+                            <div class="slider-track">
+                                <div class="slider-thumb" data-value="75"></div>
+                            </div>
+                            <div class="slider-labels">
+                                <span>MINIMAL</span>
+                                <span>OPTIMAL</span>
+                                <span>MAXIMUM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <div class="control-label">SYSTEM STATUS</div>
+                        <div class="status-indicators">
+                            <div class="status-indicator active">
+                                <div class="indicator-light"></div>
+                                <div class="indicator-label">ONLINE</div>
+                            </div>
+                            <div class="status-indicator">
+                                <div class="indicator-light"></div>
+                                <div class="indicator-label">STEALTH</div>
+                            </div>
+                            <div class="status-indicator">
+                                <div class="indicator-light"></div>
+                                <div class="indicator-label">MAINTENANCE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="system-info">
+                    <div class="info-item">
+                        <div class="info-label">SYSTEM VERSION</div>
+                        <div class="info-value">SAWON.AWAKEN v2.0.26</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">LAST UPDATE</div>
+                        <div class="info-value">2026.01.15 23:47:12 UTC</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">INTERFACE MODE</div>
+                        <div class="info-value">SHADOW MONARCH PROTOCOL</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">ACCESS LEVEL</div>
+                        <div class="info-value">OMEGA-CLASS (MAXIMUM)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Footer -->
+        <div class="system-footer">
+            <div class="footer-line">SYSTEM ACTIVE | USER: SAWON | STATUS: AWAKE</div>
+            <div class="footer-line">SHADOW INTERFACE v2.0 | © 2026 SAWON DIGITAL</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
